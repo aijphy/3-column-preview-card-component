@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+  --brad: 0.5rem;
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+.bod{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  top: 20vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Big Shoulders Display', cursive;
+}
+div[class*='card']{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 480px;
+  width: 230px;
+  border-color: green;
+  color: var(--Very-light-gray);
+  padding: 0px 40px;
+}
+div[class*='card'] p{
+  position: relative;
+  margin-bottom: 80px;
+  padding-right: 0px;
+  color: var(--Transparent-white);
+  font-size: 15px;
+  line-height: 25px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+.card1{
+  border-top-left-radius: var(--brad);
+  border-top-right-radius: var(--brad);
+  background-color: var(--Bright-orange);
+}
+.card2{
+  background-color: var(--Dark-cyan);
+}
+.card3{
+  border-bottom-left-radius: var(--brad);
+  border-bottom-right-radius: var(--brad);
+  background-color: var(--Very-dark-cyan);
+}
+img{
+  position: relative;
+  width: 65px;
+}
+a[class*='button']{
+  position: relative;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  width: 110px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2rem;
+  background-color: var(--Very-light-gray);
+  border-style: solid;
+  border-width: thick;
+  border-color: var(--Very-light-gray);
+}
+.button1{
+  color: var(--Bright-orange);
+}
+.button2{
+  color: var(--Dark-cyan);
+}
+.button3{
+  color: var(--Very-dark-cyan);
+}
+a[class*='button']:hover{
+  background-color: Transparent;
+  color: var(--Very-light-gray);
+}
+
+@media (min-width: 900px){
+
+  .container{
+    flex-direction: row;
+  }
+  div[class*='card']{
+      width: 210px;
+  }
+  .card1{
+    border-radius:0;
+    border-top-left-radius: var(--brad);
+    border-bottom-left-radius: var(--brad);
+  }
+  .card3{
+    border-radius:0;
+    border-top-right-radius: var(--brad);
+    border-bottom-right-radius: var(--brad);
+  }
+}
